@@ -1,0 +1,45 @@
+body{
+    background-color: lightblue;
+    
+    display: grid;
+    grid-template-columns:  0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    place-items: center;
+    grid-template-areas: ". aside main ."
+                         ". aside main ."
+                         ". footer footer .";
+}
+
+img{
+    border: 7px groove #1C6EA4;
+    border-radius: 17px;
+    height: auto;
+    width: 96%;
+    
+}
+
+main{
+    grid-area: main;
+    text-align: center;
+}
+
+aside{
+    grid-area: aside;   
+}
+
+footer{
+    grid-area: footer;
+}
+
+#restart{
+    margin-left: 40%;
+}
+#status{
+    color: #3d5dd1;
+}
+
+#svar{
+    border: 2px solid black;
+    padding-bottom: 3px;
+    font-size: 25px;
+}

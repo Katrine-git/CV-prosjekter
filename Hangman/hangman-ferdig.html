@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stilark.css">
+    <title>Hangman</title>
+</head>
+<body onload="main()">
+    
+    <aside>
+        <img id="bilde" src="bilder/hangman_start.jpg">
+    </aside>
+    <main>
+        <h1>Velkommen til hangman</h1>
+        <h2 id="status"></h2>
+        <button id="restart" onclick="nyttSpill()">Nytt Spill</button>
+
+        <p id="visLiv">Liv: 6  Ganger gjettet: 0</p>
+        <p id="svar"></p>
+        <div id="bGjettet">Bokstaver gjettet: </div>
+        <p id="riktigSvar"></p>
+    </main>
+    <footer>
+        <div id="alfabetet"></div>
+    </footer>
+    
+    <script type="text/javascript" src="hangman-kode.js"></script>
+</body>
+</html>
